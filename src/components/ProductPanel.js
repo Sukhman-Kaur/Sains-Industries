@@ -19,10 +19,6 @@ const ProductPanel = ({id, name, image, price, grid = true}) => {
                         </Link>
                     </div>
                 </div>
-                <footer className="flex justify-between items-center mt-4 capitalize">
-                    <h6>{name}</h6>
-                    <p className="text-blue-500 tracking-widest">{price.toCurrency()}</p>
-                </footer>
             </article>
         )
     }
@@ -37,10 +33,6 @@ const ProductPanel = ({id, name, image, price, grid = true}) => {
                 />
             </div>
             <footer className="w-full lg:w-8/12 flex flex-col gap-3 justify-center capitalize">
-                <div>
-                    <h4 className="font-bold">{name}</h4>
-                    <p className="text-blue-500 tracking-widest font-semibold">{price.toCurrency()}</p>
-                </div>
                 <p>Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic ...</p>
                 <Link to={`/products/${id}`} className="btn bg-blue-500 text-white w-max text-xs">
                     Details

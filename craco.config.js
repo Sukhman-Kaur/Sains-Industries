@@ -1,6 +1,9 @@
 module.exports = {
     style: {
-      postcss: {
+      eslint: {
+        enable: false,
+      },
+      postOptions: {
         plugins: [
           require('tailwindcss'),
           require('autoprefixer'),
